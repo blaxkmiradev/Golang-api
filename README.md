@@ -1,14 +1,11 @@
-MyAPI
+🚀 MyAPI — Simple Go CRUD API
 
-A simple CRUD REST API in Go for managing users. Built using only the Go standard library (net/http).
+A lightweight REST API built in Go using only the standard library. Perfect for learning, testing, or small projects.
 
-Features
-Get all users (GET /users)
-Get a single user by ID (GET /users/{id})
-Add a new user (POST /users)
-Update an existing user (PUT /users/{id})
-Delete a user (DELETE /users/{id})
-Project Structure
+✅ CRUD operations for users
+✅ No external dependencies
+✅ Easy to extend to persistent storage
+📂 Project Structure
 myapi/
 ├── main.go          # Entry point
 ├── go.mod           # Go module
@@ -16,24 +13,20 @@ myapi/
 │   └── user.go
 ├── models/          # Structs for data
 │   └── user.go
-└── data/            # Optional: persistent JSON storage
+└── data/            # Optional: JSON file for persistence
     └── users.json
-Prerequisites
-Go
- 1.20+ installed
-Terminal / command line
-Setup & Run
-Clone the repository (or create your folder):
+⚙️ Setup & Run
+Clone the repo (or create your folder):
 git clone https://github.com/blaxkmiradev/Golang-api.git
 cd Golang-api
-Initialize Go module (if not already):
+Initialize Go module (if not done):
 go mod init myapi
 Run the API server:
 go run main.go
 
-Server will start on port 8080.
+Server runs on http://localhost:8080
 
-API Endpoints
+🌐 API Endpoints
 Get all users
 GET /users
 
